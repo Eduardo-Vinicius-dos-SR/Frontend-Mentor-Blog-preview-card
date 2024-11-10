@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+body {
+    font-family: "Figtree", sans-serif;
+    background-color: var(--Yellow);
+}
+
+body .container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body .container .card {
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid #000;
+    border-radius: 20px;
+    padding: 30px 30px 25px;
+    background-color: var(--White);
+    box-shadow: 7px 7px 1px 1px #000;
+}
+
+p {
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+body .container .card .Illustration {
+    width: 100%;
+    border-radius: 10px;
+}
+
+body .container .card h2 {
+    display: flex;
+    align-self: start;
+    flex-grow: 0;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 5px;
+    background-color: var(--Yellow);
+    color: #000;
+    /* font-size: 1.8rem; */
+    font-weight: 800;
+}
+
+body .container .card .date-of-posting {
+    margin-top: 17px;
+    color: var(--Gray-950);
+}
+
+body .container .card .title .title-text {
+    margin-top: 20px;
+    color: #000;
+    font-size: 2.5rem;
+    transition: 0.3s ease-in-out;
+}
+
+body .container .card .text {
+    margin-top: 20px;
+    color: var(--Gray-500);
+    line-height: 25px;
+}
+
+body .container .card .creator {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+body .container .card .creator .avatar {
+    height: 100%;
+    margin-right: 15px;
+}
+
+body .container .card .creator .name {
+    color: #000;
+    font-weight: 800;
+    transition: 0.3s ease-in-out;
+}
+
+body .container .card .title .title-text:hover,
+body .container .card .creator:hover .name {
+    color: var(--Yellow);
+}
